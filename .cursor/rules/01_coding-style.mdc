@@ -1,0 +1,8 @@
+# Purpose: keep the codebase clean, readable, DRY, and easy to debug
+1. **Prefer simple solutions.** If two approaches solve the task, choose the simpler one.  
+2. **Avoid duplication.** Re-use existing functions and modules whenever possible.  
+3. **File size guardrail.** If a file grows beyond ~250 lines, refactor or split it.  
+4. **No dead code.** Remove commented-out blocks and unused imports after each change.  
+5. **Inline docs.** Provide clear docstrings + one-sentence comments for complex logic.  
+6. **SOLID + KISS.** Follow SOLID where it improves modularity, but keep YAGNI in mind.  
+7. **Language conventions.** Obey PEP-8 (Python) / ESLint Standard (JS) / Prettier defaults.  
