@@ -1,0 +1,7 @@
+# Purpose: enforce robust, real-data E2E coverage
+1. **E2E first.** Prioritise playwright browser tests that cover every main user flow.  
+2. **Realistic data.** No mocks/stubs in dev or prod; use fixture factories seeded with believable values.  
+3. **CI gatekeeper.** Failing tests block merge; do not auto-fix tests by rewriting assertions.  
+4. **Coverage target.** ≥90 % lines for critical modules; log current %.  
+5. **Headless runs.** All E2E tests must pass in headless Chromium in CI.  
+6. **Regression safety.** Write a failing test before any bug-fix and commit it first.  

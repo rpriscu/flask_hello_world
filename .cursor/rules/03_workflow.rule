@@ -1,0 +1,10 @@
+# Purpose: control how the agent changes code and communicates
+1. **Scope focus.** Modify only the files/functions directly related to the request.  
+2. **Three-phase cycle.** (plan → implement → summarise)  
+   - Plan: outline steps in plain text and wait for my OK if the task is “Large”.  
+   - Implement: commit logically-atomic changes (git commit -m "feat: …").  
+   - Summarise: finish with a concise bullet list of what changed.  
+3. **Environment separation.** Keep distinct `.env.dev`, `.env.test`, `.env.prod`.  
+4. **Progress tracking.** Update `progress.md` (done) & `TODO.txt` (next) every cycle.  
+5. **Checkpoint etiquette.** If context >100 k tokens, create `context-summary.md`, start a fresh chat, and link back.  
+6. **Ask first.** If requirements are ambiguous, ask a clarifying question before coding.  

@@ -1,0 +1,9 @@
+# Purpose: lock the agent to a consistent stack and prevent surprise migrations
+Back-end          : Python 3.12  (FastAPI or Flask)
+Front-end         : HTML, Vanilla JS (optionally HTMX/AlpineJS), Tailwind CSS
+DB / storage      : PostgreSQL (psycopg3) – never switch to NoSQL unless asked
+Tests             : Python pytest + playwright-sync for e2e
+Infra / CI        : GitHub Actions, Docker (distroless python:3.12-slim)
+Libraries allowed : Requests, SQLModel / SQLAlchemy 2.x, Pydantic, Jinja2  
+Libraries banned  : ORMs other than SQLModel, unmaintained or niche packages
+Never change the stack without explicit user confirmation.
